@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 
+# Bootstrap and autoprefixer gems
+gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'autoprefixer-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
