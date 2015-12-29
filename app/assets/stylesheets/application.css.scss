@@ -17,12 +17,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Temporary layout divider */
 .divide {
   height: 5px;
   background: #008349;
   border-bottom: 1px solid #313030;
 }
 
-body {
+/* See code below for cenarios green color HEX: #008349
+.yield-container {
   background-color: #008349;
 }
+*/
