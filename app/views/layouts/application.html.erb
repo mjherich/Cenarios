@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>Cenario's Pizza</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class='container'>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -22,6 +21,8 @@
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Menu", "/menu" %></li>
+          <li><%= link_to "Locations", "/locations" %></li>
+          <li><%= link_to "Contact", "/contact" %></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
