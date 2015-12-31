@@ -24,6 +24,20 @@
   border-bottom: 1px solid #313030;
 }
 
+.nav .red > .active a,
+.nav .red > .active a:hover {
+    background-color: #008349;
+}
+
+.nav .red > li:not(.active) > a {
+  color: black;
+}
+
+.nav-pill-offset {
+  position: relative;
+  top: 50px;
+}
+
 /* See code below for cenarios green color HEX: #008349
 .yield-container {
   background-color: #008349;
