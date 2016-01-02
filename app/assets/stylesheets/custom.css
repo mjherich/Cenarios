@@ -5,3 +5,9 @@
 .buttons-offset {
   margin-top: 100px;
 }
+
+.top-accent {
+  height: 7px;
+  background-color: #008349;
+  border-color: black;
+}
