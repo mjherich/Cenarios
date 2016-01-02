@@ -2,11 +2,29 @@
 <html>
 <head>
   <title>Cenario's Pizza</title>
+  <meta charset="UTF-8">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <section class="header">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <%= link_to image_tag("logo_vector.svg", class: 'logo-image'), root_path %>
+        </div>
+        <div class="eight columns buttons-offset">
+          <%= link_to "Home", root_path, class: 'button' %>
+          <%= link_to "Menu", menu_path, class: 'button' %>
+          <%= link_to "Locations", locations_path, class: 'button' %>
+          <%= link_to "Contact", contact_path, class: 'button' %>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <%= yield %>
 </body>
 </html>
