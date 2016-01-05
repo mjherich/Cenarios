@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Google maps API gem
+gem 'gmaps4rails'
 
 # Bootstrap and autoprefixer gems
 gem 'bootstrap-sass', '~> 3.3.4.1'
