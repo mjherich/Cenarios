@@ -1,12 +1,4 @@
 Rails.application.routes.draw do
-  get 'companies/index'
-
-  get 'companies/show'
-
-  get 'companies/new'
-
-  get 'companies/edit'
-
   root 'pages#home'
   
   get '/menu' => 'pages#menu'
