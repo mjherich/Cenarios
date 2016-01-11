@@ -30,7 +30,6 @@
           <%= link_to "Home", root_path, class: 'button' %>
           <%= link_to "Menu", menu_path, class: 'button' %>
           <%= link_to "Locations", locations_path, class: 'button' %>
-          <!-- Button to be fixed -->
           <%= link_to "Contact", new_contact_path, class: 'button' %>
         </div>
       </div>
@@ -40,6 +39,14 @@
   
   <!-- yield section -->
   <section class="app-layout-yield">
+    <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <% flash.each do |key, value| %>
+          <%= content_tag :p, value, class: "alert alert-#{key}" %>
+        <% end %>
+      </div>
+    </div>
     <%= yield %>
   </section>
 </body>

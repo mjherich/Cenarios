@@ -39,6 +39,24 @@ form > input.button {
 }
 
 .page-title {
-  text-align: center;
-  padding-top: 20px;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.alert {
+  background-color: white;
+  border-radius: 1rem;
+  border-color: black;
+}
+
+.alert-success {
+  color: #008349;
+}
+
+.alert-error {
+  color: red;
+}
+
+section.app-layout-yield > div.container:first-child {
+  height: 0.5rem;
 }
