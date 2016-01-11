@@ -44,9 +44,11 @@ form > input.button {
 }
 
 .alert {
-  background-color: white;
+  margin: 1rem 0rem;
+  display: inline-block;
   border-radius: 1rem;
-  border-color: black;
+  padding: 0.25rem 1rem;
+  background-color: white;
 }
 
 .alert-success {
