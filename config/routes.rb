@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  resources :contacts
   root 'pages#home'
   
   get '/menu' => 'pages#menu'
   get '/locations' => 'pages#locations'
-  get '/contact' => 'pages#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
