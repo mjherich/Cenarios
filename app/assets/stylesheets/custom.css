@@ -30,12 +30,12 @@
   padding: 10px;
 }
 
-td > button.button {
+form > input.button {
   background-color: white;
 }
 
-form > input.button {
-  background-color: white;
+td > form {
+  display: inline;
 }
 
 .page-title {
