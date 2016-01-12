@@ -1,0 +1,14 @@
+/* styles for home page image slider */
+
+#owl-image-slider .item {
+  margin: 1rem;
+}
+
+#owl-image-slider .item img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border: 3px;
+  border-style: solid;
+  border-color: gray;
+}

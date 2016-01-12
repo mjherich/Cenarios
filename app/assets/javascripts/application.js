@@ -13,4 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require owl.carousel
 //= require_tree .
+
+$(document).ready(function() {
+  $("#owl-image-slider").owlCarousel( {
+    autoPlay: 5000, //Set AutoPlay to 3 seconds
+ 
+    items : 4,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+  });
+});

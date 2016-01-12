@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-# Bootstrap and autoprefixer gems
-gem 'bootstrap-sass', '~> 3.3.4.1'
+# Owl Carousel for image slider
+gem 'owlcarousel-rails'
+
 gem 'autoprefixer-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
