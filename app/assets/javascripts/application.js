@@ -18,10 +18,10 @@
 
 $(document).ready(function() {
   $("#owl-image-slider").owlCarousel( {
-    autoPlay: 5000, //Set AutoPlay to 3 seconds
- 
-    items : 4,
-    itemsDesktop : [1199,3],
-    itemsDesktopSmall : [979,3]
+    autoPlay: 5000, //Set AutoPlay to 5 seconds
+    
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true 
   });
 });

@@ -6,9 +6,8 @@
 
 #owl-image-slider .item img {
   display: inline-block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 275px;
   border: 3px;
-  border-style: solid;
-  border-color: gray;
+  border-radius: 20px;
 }
