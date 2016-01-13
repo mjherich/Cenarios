@@ -28,9 +28,10 @@ html {
   background-color: #009955;
 }
 
-#footer .container .row p {
+#footer p {
   text-align: center;
   padding-top: 2rem;
+  font-size: 85%;
 }
 
 .google-maps {
