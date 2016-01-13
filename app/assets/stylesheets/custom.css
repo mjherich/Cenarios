@@ -1,3 +1,7 @@
+html {
+  background-color: #009955;
+}
+
 .logo-image {
   width: 150px;
 }
@@ -13,11 +17,20 @@
 }
 
 .app-layout-header {
-  
+  background-color: white;
 }
 
 .app-layout-yield {
   background-color: #008349;
+}
+
+.app-layout-footer {
+  background-color: #009955;
+}
+
+#footer .container .row p {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .google-maps {
