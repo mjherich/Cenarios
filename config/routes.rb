@@ -4,6 +4,15 @@ Rails.application.routes.draw do
   
   get '/menu' => 'pages#menu'
   get '/locations' => 'pages#locations'
+  
+  # Menu routes
+  get '/menu/pizza' => "menu#pizza"
+  get '/menu/sandwiches' => "menu#sandwiches"
+  get '/menu/pasta' => "menu#pasta"
+  get '/menu/wings' => "menu#wings"
+  get '/menu/sides' => "menu#sides"
+  get '/menu/drinks' => "menu#drinks"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
