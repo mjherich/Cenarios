@@ -76,3 +76,49 @@ td > form {
 section.app-layout-yield > div.container:first-child {
   height: 0.5rem;
 }
+
+/* START menu styles */
+
+ul.menu-nav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+ul.menu-nav li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+ul.menu-nav li:last-child {
+  border-right: none;
+}
+
+ul.menu-nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+ul.menu-nav li a:hover {
+  font-weight: bold;
+}
+
+span.menu-item-title {
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+div.menu-item-container {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background-color: #bbb;
+  margin-bottom: 4%;
+}
+
+/* END Menu styles */

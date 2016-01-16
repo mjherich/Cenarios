@@ -1,41 +1,55 @@
-<!-- Need to add GoTo: menu categories option to switch to different menu items -->
-
+<!-- Top menu type selector -->
 <div class="row">
-  <div class="nine offset-by-three columns">
-    <div class="menu-item-title">
-      Super-rrrific
-    </div>
-    
-    <div class="menu-item-title">
-      Veggie-rrrific
-    </div>
-    
-    <div class="menu-item-title">
-      Meat Slammer
-    </div>
-    
-    <div class="menu-item-title">
-      Chicken Garlic
-    </div>
-    
-    <div class="menu-item-title">
-      Pesto-rrrific
-    </div>
-    
-    <div class="menu-item-title">
-      Hawaiian Delight
-    </div>
-    
-    <div class="menu-item-title">
-      MediterraneanExperience
-    </div>
-    
-    <div class="menu-item-title">
-      Forgettaboutit
-    </div>
-    
-    <div class="menu-item-title">
-      Smokey Bourbon BBQ Chicken
-    </div>
+  <ul class="menu-nav">
+    <li><%= link_to "Sandwiches", menu_sandwiches_path %></li>
+    <li><%= link_to "Pasta", menu_pasta_path %></li>
+    <li><%= link_to "Wings", menu_wings_path %></li>
+    <li><%= link_to "Sides", menu_sides_path %></li>
+    <li><%= link_to "Drinks", menu_drinks_path %></li>
+  </ul>
+</div>
+
+<h4>Specialty Pizzas</h4>
+<div class="row">
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Super-rrrific</span>
+  </div>
+
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Veggie-rrrific</span>
+  </div>
+
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Meat Slammer</span>
   </div>
 </div>
+
+<div class="row">
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Chicken Garlic</span>
+  </div>
+
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Pesto-rrrific</span>
+  </div>
+
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Hawaiian Delight</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">MediterraneanExperience</span>
+  </div>
+
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Forgettaboutit</span>
+  </div>
+
+  <div class="menu-item-container four columns">
+    <span class="menu-item-title">Smokey Bourbon BBQ Chicken</span>
+  </div>
+</div>
+
+<h4>Build your own</h4>
