@@ -1,25 +1,22 @@
-<div class="container page-title">
-  <div class="row">
-    <h2>Contact</h2>
-  </div>
+<div class="row page-title">
+  <h2>Contact</h2>
 </div>
 
-<div class="container">
-  <div class="row">
-    <%= form_for @contact do |f| %>
-      <div class="form">
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-      </div>
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email %>
-      </div>
-      <div class="form-group">
-        <%= f.label :comment %>
-        <%= f.text_area :comment %>
-      </div>
-      <%= f.submit 'Submit', class: 'button' %>
-    <% end %>
-  </div>
+
+<div class="row">
+  <%= form_for @contact do |f| %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </div>
+    <div>
+      <%= f.label :comment %>
+      <%= f.text_area :comment %>
+    </div>
+    <%= f.submit 'Submit', class: 'button' %>
+  <% end %>
 </div>
