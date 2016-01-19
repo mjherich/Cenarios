@@ -107,16 +107,14 @@ ul.menu-nav li a:hover {
   font-weight: bold;
 }
 
-span.menu-item-title {
+h6.menu-item-title {
   font-weight: bold;
   margin-left: 1rem;
   margin-top: 2rem;
 }
 
-div.menu-item-container {
+.menu-item-container {
   display: block;
-  width: 10rem;
-  height: 10rem;
   background-color: #bbb;
   margin-bottom: 4%;
 }
