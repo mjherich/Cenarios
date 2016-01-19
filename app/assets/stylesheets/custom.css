@@ -81,22 +81,10 @@ section.app-layout-yield > div.container:first-child {
 
 ul.menu-nav {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
   overflow: hidden;
 }
 
-ul.menu-nav li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-
-ul.menu-nav li:last-child {
-  border-right: none;
-}
-
 ul.menu-nav li a {
-  display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
