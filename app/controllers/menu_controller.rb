@@ -13,7 +13,4 @@ class MenuController < ApplicationController
   
   def sides
   end
-  
-  def drinks
-  end
 end
