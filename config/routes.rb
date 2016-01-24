@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :applicants, only: [:new, :create]
   resources :contacts
   root 'pages#home'
   

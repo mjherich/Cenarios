@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle_make: MyString
+  vehicle_model: MyString
+  vehicle_year: 1
+  vin: MyString
+  license_plate: MyString
+  driver_license_number: MyString
+  state_issued: MyString
+  issue_date: MyString
+  insurance_company: MyString
+  insurance_agent: MyString
+  insurance_agent_address: MyString
+  liability_coverage: MyString
+  traffic_violations: MyString
+  applicant_id: 
+
+two:
+  vehicle_make: MyString
+  vehicle_model: MyString
+  vehicle_year: 1
+  vin: MyString
+  license_plate: MyString
+  driver_license_number: MyString
+  state_issued: MyString
+  issue_date: MyString
+  insurance_company: MyString
+  insurance_agent: MyString
+  insurance_agent_address: MyString
+  liability_coverage: MyString
+  traffic_violations: MyString
+  applicant_id: 

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @applicant.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @applicant.first_name %>
+</p>
+
+<p>
+  <strong>Middle initial:</strong>
+  <%= @applicant.middle_initial %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @applicant.street_address %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @applicant.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @applicant.zip %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @applicant.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @applicant.email %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @applicant.dob %>
+</p>
+
+<p>
+  <strong>Social sec:</strong>
+  <%= @applicant.social_sec %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @applicant.position %>
+</p>
+
+<p>
+  <strong>Citizen:</strong>
+  <%= @applicant.citizen %>
+</p>
+
+<p>
+  <strong>Worked for:</strong>
+  <%= @applicant.worked_for %>
+</p>
+
+<p>
+  <strong>Worked for when:</strong>
+  <%= @applicant.worked_for_when %>
+</p>
+
+<p>
+  <strong>Felony:</strong>
+  <%= @applicant.felony %>
+</p>
+
+<p>
+  <strong>Felony explanation:</strong>
+  <%= @applicant.felony_explanation %>
+</p>
+
+<%= link_to 'Edit', edit_applicant_path(@applicant) %> |
+<%= link_to 'Back', applicants_path %>
