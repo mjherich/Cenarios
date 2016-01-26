@@ -1,3 +1,50 @@
 // Place all the styles related to the menu controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.menu-nav {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.menu-nav li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+ul.menu-nav li a:hover {
+  font-weight: bold;
+}
+
+h5.menu-item-title {
+  margin-left: 1rem;
+  padding-top: 2rem;
+  clear: both;
+}
+
+div h4 {
+  font-weight: bold;
+  margin-top: 4%;
+}
+
+div.menu-item-container {
+  margin-bottom: 4%;
+}
+
+div.menu-item-container img {
+  float: left;
+  max-width: 40%;
+  width: auto;
+}
+
+div.menu-item-container p {
+  padding-left: 4%;
+  overflow: auto;
+  font-size: 1.7rem;
+}
+
+.clearer {
+  clear: both;
+}

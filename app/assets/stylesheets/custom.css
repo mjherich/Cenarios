@@ -1,47 +1,72 @@
 html {
-  background-color: #009955;
+  background-color: black;
+}
+
+h5, h4, h2 {
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 .logo-image {
   width: 150px;
 }
 
-.buttons-offset {
-  margin-top: 100px;
+/* NAVIGATION BAR */
+.nav-buttons ul {
+  margin: 0;
+  padding-top: 8rem;
+  list-style-type: none;
+  overflow: hidden;
 }
 
-.top-accent {
-  height: 7px;
-  background-color: #008349;
-  border-color: black;
+.nav-buttons ul li {
+  float: left;
+  background-color: #dddddd;
 }
+
+.nav-buttons ul li:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.nav-buttons ul li:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.nav-buttons a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-buttons a:hover {
+  color: white;
+}
+
+/* END NAVIGATION BAR */
 
 .app-layout-header {
-  background-color: white;
 }
 
 .app-layout-yield {
-  background-color: #008349;
+  /* background-color: #008349; */
 }
 
 .app-layout-footer {
-  background-color: #009955;
+  /* background-color: #009955; */
 }
 
 #footer p {
   text-align: center;
   padding-top: 2rem;
   font-size: 85%;
-}
-
-.google-maps {
-  
-}
-
-.location-select {
-  background-color: #00b363;
-  border-radius: 25px;
-  padding: 10px;
+  color: white;
 }
 
 form > input.button {
@@ -53,7 +78,7 @@ td > form {
 }
 
 .page-title {
-  text-align: left;
+  text-align: center;
   padding-top: 2rem;
 }
 
@@ -76,53 +101,3 @@ td > form {
 section.app-layout-yield > div.container:first-child {
   height: 0.5rem;
 }
-
-/* START menu styles */
-
-ul.menu-nav {
-  list-style-type: none;
-  overflow: hidden;
-}
-
-ul.menu-nav li a {
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: #333;
-}
-
-ul.menu-nav li a:hover {
-  font-weight: bold;
-}
-
-h5.menu-item-title {
-  margin-left: 1rem;
-  padding-top: 2rem;
-  clear: both;
-}
-
-div h4 {
-  font-weight: bold;
-  margin-top: 4%;
-}
-
-div.menu-item-container {
-  margin-bottom: 4%;
-}
-
-div.menu-item-container img {
-  float: left;
-  max-width: 40%;
-  width: auto;
-}
-
-div.menu-item-container p {
-  padding-left: 4%;
-  overflow: auto;
-  font-size: 1.7rem;
-}
-
-.clearer {
-  clear: both;
-}
-/* END Menu styles */
