@@ -2,72 +2,104 @@
   <h2>Locations</h2>
 </div>
 
-<div class="row">
-  <div class="four columns google-maps">
-    <iframe height="450" frameborder="3" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgTdnThYUhYARnL2DURnH-Os&key=AIzaSyA5rDNAy6w3iebwwuAEcGUD7A-eF4eMdlU" allowfullscreen></iframe>
-  </div>
-  <div class="eight columns location-select">
-    <table class="u-full-width">
-      <thead>
-        <tr>
-          <th>Location</th>
-          <th>City</th>
-          <th>Phone</th>
-          <th>Order Online</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Cenarios Pizza of Vacaville</td>
-          <td>Vacaville</td>
-          <td>707-449-1900</td>
-          <td>
-            <form action="https://cenarios-vacaville.foodtecsolutions.com:9443/">
-              <input type="submit" value="Order Online" class="button">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>Cenarios Pizza of Fairfield</td>
-          <td>Fairfield</td>
-          <td>707-449-4400</td>
-          <td>
-            <form action="https://cenarios-fairfield.foodtecsolutions.com:9443/">
-              <input type="submit" value="Order Online" class="button">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>Cenarios Pizza of Davis</td>
-          <td>Davis</td>
-          <td>530-759-1100</td>
-          <td>
-            <form action="https://cenarios-davis.foodtecsolutions.com/menu">
-              <input type="submit" value="Order Online" class="button">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>Cenarios Pizza of Dixon</td>
-          <td>Dixon</td>
-          <td>707-693-1100</td>
-          <td>
-            <form action="https://cenarios-dixon.foodtecsolutions.com/menu">
-              <input type="submit" value="Order Online" class="button">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>Cenarios Pizza of Cordelia</td>
-          <td>Cordelia</td>
-          <td>707-864-6400</td>
-          <td>
-            <form action="https://cenarios-suisun.foodtecsolutions.com:9443/">
-              <input type="submit" value="Order Online" class="button">
-            </form>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="row location-select">
+    <!-- <iframe height="450" frameborder="3" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgTdnThYUhYARnL2DURnH-Os&key=AIzaSyA5rDNAy6w3iebwwuAEcGUD7A-eF4eMdlU" allowfullscreen></iframe>
+  </div> -->
+  <table class="u-full-width">
+    <thead>
+      <tr>
+        <th>Location</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Order Online</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div>
+            <strong>Cenarios Pizza of Vacaville</strong>
+            <p>1490 Alamo Dr. Suite D</p>
+            <p>Vacaville, CA 95687</p>
+          </div>
+          <%= image_tag("map-marker.svg") %>
+        </td>
+        <td>Vacaville</td>
+        <td>707-449-1900</td>
+        <td>
+          <form action="https://cenarios-vacaville.foodtecsolutions.com:9443/">
+            <input type="submit" value="Order Online" class="button">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <strong>Cenarios Pizza of Fairfield</strong>
+            <p>1955 W. Texas Suite 9</p>
+            <p>Fairfield, CA 94533</p>
+          </div>
+          <%= image_tag("map-marker.svg") %>
+        </td>
+        <td>Fairfield</td>
+        <td>707-449-4400</td>
+        <td>
+          <form action="https://cenarios-fairfield.foodtecsolutions.com:9443/">
+            <input type="submit" value="Order Online" class="button">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <strong>Cenarios Pizza of Davis</strong>
+            <p>1300 Covell Suite B</p>
+            <p>Davis, CA 95616</p>
+          </div>
+          <%= image_tag("map-marker.svg") %>
+        </td>
+        <td>Davis</td>
+        <td>530-759-1100</td>
+        <td>
+          <form action="https://cenarios-davis.foodtecsolutions.com/menu">
+            <input type="submit" value="Order Online" class="button">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <strong>Cenarios Pizza of Dixon</strong>
+            <p>1160 Pitt School Rd. Suite G</p>
+            <p>Dixon, CA 95620</p>
+          </div>
+          <%= image_tag("map-marker.svg") %>
+        </td>
+        <td>Dixon</td>
+        <td>707-693-1100</td>
+        <td>
+          <form action="https://cenarios-dixon.foodtecsolutions.com/menu">
+            <input type="submit" value="Order Online" class="button">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <strong>Cenarios Pizza of Cordelia</strong>
+            <p>364 Pittman Rd. #1</p>
+            <p>Fairfield, CA 94534</p>
+          </div>
+          <%= image_tag("map-marker.svg") %>
+        </td>
+        <td>Cordelia</td>
+        <td>707-864-6400</td>
+        <td>
+          <form action="https://cenarios-suisun.foodtecsolutions.com:9443/">
+            <input type="submit" value="Order Online" class="button">
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
