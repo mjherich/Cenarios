@@ -24,10 +24,10 @@
     <!-- Logo and button navigation container -->
     <div class="container">
       <div class="row">
-        <div class="four columns">
-          <%= link_to image_tag("logo_vector.svg", class: 'logo-image'), root_path %>
+        <div class="three columns">
+          <%= link_to image_tag("CenariosLogo.png", class: 'logo-image'), root_path %>
         </div>
-        <div class="eight columns nav-buttons">
+        <div class="six columns nav-buttons">
           <ul>
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "Menu", menu_pizza_path %></li>
@@ -35,7 +35,10 @@
             <li><%= link_to "Contact", new_contact_path %></li>
             <li><a href="#">About Us</a></li>
           </ul>
-          <%= link_to "Order Now!", locations_path, class: 'order-now-button' %>
+        </div>
+        <div class="three columns order-now-button">
+          <p>We Deliver!</p>
+          <%= link_to "Order Now", locations_path %>
         </div>
       </div>
     </div>

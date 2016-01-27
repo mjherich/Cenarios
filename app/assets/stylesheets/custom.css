@@ -1,5 +1,15 @@
 /* ORDER NOW STYLES */
-.order-now-button {
+div.order-now-button {
+  padding-top: 4.5rem;
+}
+
+div.order-now-button p {
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+div.order-now-button a {
 	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
 	box-shadow:inset 0px 1px 0px 0px #cf866c;
@@ -17,16 +27,17 @@
 	border:1px solid #942911;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Verdana;
+	color:black;
 	font-size:2rem;
 	font-weight:bold;
-	padding:6px 24px;
+  width: 100%;
+	padding-top:9px;
+  padding-bottom:9px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #854629;
-  float: right;
+  text-align: center;
 }
-.order-now-button:hover {
+div.order-now-button a:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
 	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
 	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
@@ -35,16 +46,15 @@
 	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
 	background-color:#bc3315;
-  color: #f5e9c4;
+  color: white;
 }
-.order-now-button:active {
+div.order-now-button a:active {
 	position:relative;
 	top:1px;
 }
 /* END ORDER NOW STYLES */
 
 .header-slider-swf {
-  /* background-color: #f3d695; */
   background: #f3d695; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#f5e9c4, #f5d59d); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#f5e9c4, #f5d59d); /* For Opera 11.1 to 12.0 */
@@ -69,25 +79,8 @@ p {
 }
 
 .logo-image {
-  width: 150px;
+  width: 100%;
 }
-
-/* ORDER NOW BUTTON */
-div.order-now {
-  margin-bottom: 2rem;
-}
-
-div.order-now a {
-  padding: 1rem 2rem;
-  background-color: red;
-  text-decoration: none;
-  font-size: 200%;
-  color: black;
-  border-style: solid;
-  border-color: yellow;
-  border-width: 3px;
-}
-/* END ORDER NOW BUTTON */
 
 /* NAVIGATION BAR */
 div.nav-buttons {
