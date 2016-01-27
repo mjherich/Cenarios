@@ -1,3 +1,61 @@
+/* ORDER NOW STYLES */
+.order-now-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:2rem;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+  float: right;
+}
+.order-now-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+  color: #f5e9c4;
+}
+.order-now-button:active {
+	position:relative;
+	top:1px;
+}
+/* END ORDER NOW STYLES */
+
+.header-slider-swf {
+  /* background-color: #f3d695; */
+  background: #f3d695; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#f5e9c4, #f5d59d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f5e9c4, #f5d59d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f5e9c4, #f5d59d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f5e9c4, #f5d59d); /* Standard syntax */
+}
+
+.home-text h2 {
+  color: #f5e9c4;
+}
+
 html {
   background-color: black;
 }
@@ -14,12 +72,33 @@ p {
   width: 150px;
 }
 
+/* ORDER NOW BUTTON */
+div.order-now {
+  margin-bottom: 2rem;
+}
+
+div.order-now a {
+  padding: 1rem 2rem;
+  background-color: red;
+  text-decoration: none;
+  font-size: 200%;
+  color: black;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 3px;
+}
+/* END ORDER NOW BUTTON */
+
 /* NAVIGATION BAR */
+div.nav-buttons {
+  padding-top: 8rem;
+}
+
 .nav-buttons ul {
   margin: 0;
-  padding-top: 8rem;
   list-style-type: none;
   overflow: hidden;
+  float: left;
 }
 
 .nav-buttons ul li {
@@ -48,7 +127,6 @@ p {
 .nav-buttons a:hover {
   color: white;
 }
-
 /* END NAVIGATION BAR */
 
 .app-layout-header {

@@ -1,17 +1,24 @@
 <!-- Main page to be used for anything that's relevant to a new user upon entering the site -->
 
-<div class="row">
+<div class="row header-slider-swf">
+  <div class="one-third column">
+    <embed src="<%= asset_path('header.swf') %>" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="300" height="320"></embed>
+  </div>
   <div class="two-thirds column">
     <div id="owl-image-slider">
       <div class="item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Owl Image"></div>
       <div class="item"><img src="http://troppa-nl.com/wp-content/uploads/2015/08/pizza-stock.jpg" alt="Owl Image"></div>
       <div class="item"><img src="http://www.starrspizza.net/uploads/1/4/4/1/14417018/9990048_orig.jpg" alt="Owl Image"></div>
       <div class="item"><img src="http://parkhillpizza.com/includes/img/pizza2.jpg" alt="Owl Image"></div>
-      <div class="item"><img src="http://www.thepizzahouse76.com/resources/pizzaslice.jpg" alt="Owl Image"></div>
+      <div class="item"><img src="http://images8.alphacoders.com/369/369063.jpg" alt="Owl Image"></div>
     </div>
   </div>
-  <div class="one-third column">
-    <%= button_to "Order Now!", locations_path, class: "button", method: :get %>
+</div>
+
+<div class="home-text">
+  <h2>CIAO</h2>
     <p>Cenario's Pizza has been part of Solano County's history since 1986 when Alexander DiManno and his son Mario DiManno first opened their doors in Vacaville California, and to this day we are committed to delivering on their promise of a quality pizza at a great price. We are family owned and believe that staying family owned is the best way to do that.</p>
-  </div>
+  <p> Our pizza dough is prepared fresh daily, our tomato sauce is made with fresh packed tomatoes and our own unique spice blend, our cheese is 100% real California Mozzarella, and we use only the best ingredients for our pizza toppings.</p>
+  <p>At Cenario's Pizza, it is common to see smiles on both sides of the counter. Our customers love to be able to feed their family and at a reasonable price while receiving a Quality pizza. We want our pizza and our prices to impress you enough that you tell your friends and family about us. When customers do our advertising, we can concentrate on making a great pizza and give excellent service.</p>
+  <p>At Cenario's, we WANT to be your NUMBER 1 CHOICE when ordering pizza. So when You think about Pizza, think Cenario's.</p>
 </div>
