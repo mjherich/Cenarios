@@ -1,13 +1,4 @@
 /* ORDER NOW STYLES */
-div.order-now-button {
-  padding-top: 4.5rem;
-}
-
-div.order-now-button p {
-  margin: 0;
-  font-size: 25px;
-  text-align: center;
-}
 
 div.order-now-button a {
 	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
@@ -30,7 +21,7 @@ div.order-now-button a {
 	color:black;
 	font-size:2rem;
 	font-weight:bold;
-  width: 100%;
+  width: 66.666%;
 	padding-top:9px;
   padding-bottom:9px;
 	text-decoration:none;
@@ -78,60 +69,63 @@ p {
   color: white;
 }
 
-.logo-image {
-  width: 100%;
-}
-
 /* NAVIGATION BAR */
-div.nav-buttons {
-  padding-top: 8rem;
-}
-
-.nav-buttons ul {
-  margin: 0;
-  list-style-type: none;
-  overflow: hidden;
-  float: left;
-}
-
-.nav-buttons ul li {
-  float: left;
-  background-color: #dddddd;
-}
-
-.nav-buttons ul li:first-child {
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-}
-
-.nav-buttons ul li:last-child {
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-}
-
-.nav-buttons a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav-buttons a:hover {
-  color: white;
-}
-/* END NAVIGATION BAR */
-
-.app-layout-header {
+.nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 85px;
+  background-color: grey;
+  opacity: 0.85;
 }
 
 .app-layout-yield {
-  /* background-color: #008349; */
+  position: relative;
+  padding-top: 80px;
 }
 
-.app-layout-footer {
-  /* background-color: #009955; */
+.nav div.seven {
+  margin-left: 0;
+  height: 100%;
 }
+
+.nav .seven > div {
+  width: 24.5%;
+  height: 100%;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav span {
+  line-height: 85px;
+  vertical-align: middle;
+}
+
+.nav a {
+  color: white;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.nav img {
+  width: 75%;
+  float: right;
+}
+
+/*
+div.nav-buttons {
+  padding-top: 8rem;
+}
+.nav-buttons a:hover {
+  color: white;
+}
+*/
+/* END NAVIGATION BAR */
 
 #footer p {
   text-align: center;
