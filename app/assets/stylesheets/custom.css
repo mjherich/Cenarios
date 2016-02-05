@@ -64,47 +64,68 @@ div.order-now-button a:active {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 85px;
-  background-color: grey;
-  opacity: 0.85;
-}
-
-.app-layout-yield {
-  position: relative;
-  padding-top: 80px;
+  height: 65px;
+  background-color: #404040;
 }
 
 .nav div.seven {
   margin-left: 0;
-  height: 100%;
 }
 
-.nav .seven > div {
-  width: 24.5%;
+.nav div.seven, nav, nav ul, nav li {
   height: 100%;
-  margin: auto;
-  display: inline-block;
+  margin-bottom: 0;
+}
+
+nav ul {
+  line-height: 65px;
+}
+
+nav li {
+  display: list-item;
+  position: relative;
+  float: left;
+  padding: 0;
   text-align: center;
+  width: 24.999%;
+  list-style: none;
 }
 
-.nav span {
-  line-height: 85px;
-  vertical-align: middle;
-}
-
-.nav a {
+nav a {
   color: white;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.nav a:hover {
-  color: black;
+nav li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+nav li:hover a {
+  color: #96979B;
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+  text-decoration: underline;
 }
 
 .nav img {
   width: 75%;
   float: right;
+}
+
+.app-layout-yield {
+  position: relative;
+  padding-top: 60px;
 }
 
 /*
