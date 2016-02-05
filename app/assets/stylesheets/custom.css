@@ -1,3 +1,17 @@
+/* GENERAL STYLES */
+html {
+  background-color: black;
+}
+
+h5, h4, h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+/* END GENERAL STYLES*/
+
 /* ORDER NOW STYLES */
 
 div.order-now-button a {
@@ -44,30 +58,6 @@ div.order-now-button a:active {
 	top:1px;
 }
 /* END ORDER NOW STYLES */
-
-.header-slider-swf {
-  background: #f3d695; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#f5e9c4, #f5d59d); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#f5e9c4, #f5d59d); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#f5e9c4, #f5d59d); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#f5e9c4, #f5d59d); /* Standard syntax */
-}
-
-.home-text h2 {
-  color: #f5e9c4;
-}
-
-html {
-  background-color: black;
-}
-
-h5, h4, h2 {
-  color: white;
-}
-
-p {
-  color: white;
-}
 
 /* NAVIGATION BAR */
 .nav {
@@ -126,6 +116,26 @@ div.nav-buttons {
 }
 */
 /* END NAVIGATION BAR */
+
+div#taste-swf {
+  float: right;
+  margin-left: 2rem;
+}
+
+/* hide swf on mobile */
+@media (max-width: 600px) {
+  div#taste-swf {
+    display: none;
+  }
+}
+
+div#tast-img {
+  
+}
+
+.home-text p {
+  text-align: justify;
+}
 
 #footer p {
   text-align: center;

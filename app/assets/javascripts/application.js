@@ -19,10 +19,11 @@
 
 $(document).ready(function() {
   $("#owl-image-slider").owlCarousel( {
-    autoPlay: 5000, //Set AutoPlay to 5 seconds
+    autoPlay: 7000, //Set AutoPlay to 5 seconds
     
-    slideSpeed : 300,
-    paginationSpeed : 400,
+    slideSpeed : 150,
+    paginationSpeed : 200,
+    pagination:false,
     singleItem:true 
   });
 });
