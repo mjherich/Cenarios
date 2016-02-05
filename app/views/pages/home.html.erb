@@ -12,7 +12,10 @@
     <div class="home-text">
       <h2>CIAO</h2>
       <div id="taste-swf">
-        <embed src="<%= asset_path('header.swf') %>" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="300" height="320">
+        <object data="<%= asset_path('taste.swf') %>" type="application/x-shockwave-flash" width="300" height="320" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer">
+          <param name="movie" value="<%= asset_path('taste.swf') %>"/>
+          <%= image_tag("taste.png") %>
+        </object>
       </div>
       <p>Cenario's Pizza has been part of Solano County's history since 1986 when Alexander DiManno and his son Mario DiManno first opened their doors in Vacaville California, and to this day we are committed to delivering on their promise of a quality pizza at a great price. We are family owned and believe that staying family owned is the best way to do that.</p>
       <div id="taste-img"></div>

@@ -122,17 +122,6 @@ div#taste-swf {
   margin-left: 2rem;
 }
 
-/* hide swf on mobile */
-@media (max-width: 600px) {
-  div#taste-swf {
-    display: none;
-  }
-}
-
-div#tast-img {
-  
-}
-
 .home-text p {
   text-align: justify;
 }
