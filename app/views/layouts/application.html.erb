@@ -19,25 +19,27 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <section class="nav">
-    <!-- Logo and button navigation container -->
-    <div class="two offset-by-one columns">
-      <%= link_to image_tag("CenariosLogo.png"), root_path %>
+  <section>
+    <div class="nav">
+      <!-- Default navigation container -->
+      <div class="nine columns offset-by-one">
+        <header>
+          <%= link_to image_tag("CenariosLogo.png"), root_path, id: 'logo' %>
+          <nav>
+            <a href="#" id="menu-icon" style="background: url(<%= image_url("menu-icon.png") %>) center;"></a>
+            <ul>
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Menu", menu_pizza_path %></li>
+              <li><%= link_to "Locations", locations_path %></li>
+              <li><%= link_to "Contact", new_contact_path %></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="order-now-button">
+        <%= link_to "Order Now", locations_path %>
+      </div>
     </div>
-    <div class="seven columns">
-      <nav>
-        <ul>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Menu", menu_pizza_path %></li>
-          <li><%= link_to "Locations", locations_path %></li>
-          <li><%= link_to "Contact", new_contact_path %></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="two columns order-now-button">
-      <%= link_to "Order Now", locations_path %>
-    </div>
-    <!-- End Logo and button navigation container -->
   </section>
   
   <!-- yield section -->
