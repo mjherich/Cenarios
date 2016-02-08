@@ -57,9 +57,24 @@
   <section class="app-layout-footer">
     <div id="footer">
       <div class="container">
-        <div class="row">
-          <p>Copyright © 2016 Cenario's Pizza. All rights reserved.</p>
+        <div class="row footer-block">
+          <div class="three columns">
+            <h5>Site Nav</h5>
+          </div>
+          <div class="six columns">
+            <h5>About Us</h5>
+          </div>
+          <div class="three columns">
+            <h5>Join our email list!</h5>
+            <p>Receive weekly emails with our newest specials</p>
+            <div id="email-list-button">
+              <%= link_to "Sign Up Now!", "#" %>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <p>Copyright © 2016 Cenario's Pizza. All rights reserved.</p>
       </div>
     </div>
   </section>

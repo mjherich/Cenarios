@@ -11,6 +11,33 @@ p {
   color: white;
 }
 
+/* FOOTER STYLES */
+#footer {
+  position: relative;
+  top: 35px;
+  background-color: #404040;
+}
+
+#footer p:last-child {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 85%;
+  color: white;
+}
+
+.footer-block {
+  padding-top: 35px;
+}
+
+.footer-block p {
+  padding-top: 0px;
+}
+
+.footer-block div {
+  text-align: center;
+}
+/* END FOOTER STYLES */
+
 /* END GENERAL STYLES*/
 
 div#taste-swf {
@@ -19,22 +46,23 @@ div#taste-swf {
 }
 
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  div#taste-swf {
-  display: none;
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+    div#taste-swf {
+      display: none;
+    }
   }
-}
 
 .home-text p {
   text-align: justify;
 }
 
-#footer p {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 85%;
-  color: white;
+.divider {
+  width: 100%;
+  height: 4px;
+  background-color: #f5e9c4;
+  position: relative;
+  top: -6px;
 }
 
 form > input.button {
