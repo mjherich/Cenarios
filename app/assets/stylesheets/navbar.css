@@ -96,6 +96,10 @@ nav a {
     display: none;
   }
   
+  #logo img {
+    margin-left: 6%;
+  }
+  
 	#menu-icon {
 		display:inline-block;
 	}
@@ -106,7 +110,8 @@ nav a {
   }
   
   .nav div.nine {
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
   }
 
 	nav ul, nav:active ul { 
