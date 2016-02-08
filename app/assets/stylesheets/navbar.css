@@ -21,12 +21,14 @@ div.order-now-button a {
 	color:black;
 	font-size:2rem;
 	font-weight:bold;
-  width: 66.666%;
+  width: 150px;
 	padding-top:9px;
   padding-bottom:9px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #854629;
   text-align: center;
+  float: right;
+  margin: 10px 50px 0 0;
 }
 div.order-now-button a:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
@@ -84,6 +86,10 @@ nav li {
   float: left;
 }
 
+nav a {
+  text-transform: uppercase;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 1024px) {
   .order-now-button {
@@ -98,13 +104,17 @@ nav li {
     padding-top: 15px;
     padding-right: 15px;
   }
+  
+  .nav div.nine {
+    width: 90%;
+  }
 
 	nav ul, nav:active ul { 
 		display: none;
 		position: absolute;
 		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
+		background: black;
+		border: 5px solid #404040;
 		right: 20px;
 		top: 60px;
 		width: 50%;
@@ -114,9 +124,30 @@ nav li {
 	nav li {
 		text-align: center;
 		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+		margin: 5px 0;
+    border: 2px solid #595959;
+    border-radius: 4px;
+    background-color: white;
+    line-height: 3rem;
 	}
+  
+  nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+  }
+  
+  nav li:active {
+    color: black;
+    position: relative;
+    top: 2px;
+  }
+  
+  nav li:last-child a {
+    font-weight: bold;
+  }
 
 	nav:hover ul {
 		display: block;
@@ -150,7 +181,6 @@ nav li {
     color: white;
     font-size: 2rem;
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
     margin: 0;
@@ -186,6 +216,11 @@ nav li {
     -webkit-transform:scale(1.2);
     transform:scale(1.2);
     text-decoration: underline;
+  }
+  
+  /* Hide order now list item */
+  nav li:last-child {
+    display: none;
   }
 }
 
