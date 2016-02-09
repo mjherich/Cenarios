@@ -59,10 +59,19 @@
       <div class="container">
         <div class="row footer-block">
           <div class="three columns">
-            <h5>Site Nav</h5>
+            <h5>Site Navigation</h5>
+            <ul>
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Menu", menu_path %></li>
+              <li><%= link_to "Locations", locations_path %></li>
+              <li><%= link_to "Contact Us", new_contact_path %></li>
+              <li><%= link_to "Jobs", "#Jobs" %></li>
+              <li><%= link_to "Specials", "#Specials" %></li>
+            </ul>
           </div>
           <div class="six columns">
             <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue, quam at lacinia vestibulum, sapien elit cursus felis, at sagittis odio risus eget ligula. Nunc venenatis pharetra risus cursus dapibus. Mauris in cursus dolor, et ullamcorper diam. Nam facilisis massa metus, vitae convallis felis facilisis et. Nulla id dignissim urna. Etiam ultrices volutpat risus, eu faucibus dolor varius feugiat. Duis ac leo scelerisque, pulvinar ipsum a, hendrerit urna. Vestibulum mollis tellus vestibulum iaculis laoreet. In nec nibh dignissim, tincidunt lorem ac, accumsan arcu.</p>
           </div>
           <div class="three columns">
             <h5>Join our email list!</h5>
@@ -73,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row copyright">
         <p>Copyright © 2016 Cenario's Pizza. All rights reserved.</p>
       </div>
     </div>
