@@ -27,3 +27,20 @@ $(document).ready(function() {
     singleItem:true 
   });
 });
+
+var bumpIt = function() {
+      $('div#wrap').css('margin-bottom', $('div#footer').height() + 50 + 'px');
+    },
+    didResize = false;
+
+bumpIt();
+
+$(window).scroll(function() {
+  didResize = true;
+});
+setInterval(function() {
+  if(didResize) {
+    didResize = false;
+    bumpIt();
+  }
+}, 250);

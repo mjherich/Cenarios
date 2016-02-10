@@ -1,6 +1,10 @@
 /* GENERAL STYLES */
-html {
+body {
   background-color: black;
+}
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 h5, h4, h2 {
@@ -11,11 +15,17 @@ p {
   color: white;
 }
 
+#wrap {
+  overflow: hidden;
+}
+
 /* FOOTER STYLES */
 #footer {
-  position: relative;
-  top: 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #404040;
+  clear: both;
 }
 
 .footer-block div:first-child ul {
@@ -103,6 +113,6 @@ td > form {
   color: red;
 }
 
-section.app-layout-yield > div.container:first-child {
+#app-layout-yield > .container:first-child {
   height: 0.5rem;
 }
