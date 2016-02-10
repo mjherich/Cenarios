@@ -76,14 +76,6 @@ div#taste-swf {
   text-align: justify;
 }
 
-.divider {
-  width: 100%;
-  height: 4px;
-  background-color: #f5e9c4;
-  position: relative;
-  top: -6px;
-}
-
 form > input.button {
   background-color: white;
 }

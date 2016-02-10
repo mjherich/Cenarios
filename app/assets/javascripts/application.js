@@ -26,6 +26,7 @@ $(document).ready(function() {
     pagination:false,
     singleItem:true 
   });
+  didResize = true;
 });
 
 var bumpIt = function() {
@@ -35,9 +36,6 @@ var bumpIt = function() {
 
 bumpIt();
 
-$(window).scroll(function() {
-  didResize = true;
-});
 setInterval(function() {
   if(didResize) {
     didResize = false;
