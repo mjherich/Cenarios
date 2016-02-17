@@ -22,26 +22,30 @@
   <div id="wrap">
     <!-- Default navigation container -->
     <div id="nav">
-      <div class="nine columns offset-by-one">
+      <div class="navbar-container">
         <header>
-          <%= link_to image_tag("CenariosLogo.png"), root_path, id: 'logo' %>
-          <nav>
-            <a href="#" id="menu-icon" style="background: url(<%= image_url("menu-icon.png") %>) center;"></a>
-            <ul>
-              <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "Menu", menu_pizza_path %></li>
-              <li><%= link_to "Locations", locations_path %></li>
-              <li><%= link_to "Contact", new_contact_path %></li>
-              <li><%= link_to "Order Now", locations_path %></li>
-            </ul>
-          </nav>
+          <div id="logo">
+            <%= link_to image_tag("CenariosLogo.png"), root_path %>
+          </div>
+          <div class="nav-wrap">
+            <nav>
+              <a href="#" id="menu-icon" style="background: url(<%= image_url("menu-icon.png") %>) center;"></a>
+              <ul>
+                <li><%= link_to "Home", root_path %></li>
+                <li><%= link_to "Menu", menu_pizza_path %></li>
+                <li><%= link_to "Locations", locations_path %></li>
+                <li><%= link_to "Contact", new_contact_path %></li>
+                <li><%= link_to "Order Now", locations_path %></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="order-now">
+            <a href="<%= locations_path %>">
+              <div id="order-now-text">Order Now!</div>
+              <%= image_tag("wholePizza.svg") %>
+            </a>
+          </div>
         </header>
-      </div>
-      <div class="order-now">
-        <a href="<%= locations_path %>">
-          <div id="order-now-text">Order Now!</div>
-          <%= image_tag("wholePizza.svg") %>
-        </a>
       </div>
     </div>
 

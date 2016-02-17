@@ -2,12 +2,11 @@
 
 .order-now {
   display: inline-block;
-  width: 165px;
+  width: 160px;
   height: 100%;
   overflow: hidden;
   position: relative;
-  float: left;
-  margin-left: 5px;
+  float: right;
 }
 
 .order-now a {
@@ -70,11 +69,34 @@
 
 nav {
   float: left;
-  width: 80%;
+  width: 100%;
 }
 
 #nav, #nav header {
   height: 65px;
+}
+
+.navbar-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.nav-wrap {
+  display: inline-block;
+  width: 66.666%;
+}
+
+@media only screen and (min-width : 1280px) {
+  .nav-wrap {
+    width: 75%;
+  }
+}
+
+#logo {
+  width: 150px;
+  height: 65px;
+  display:inline-block;
 }
 
 #logo img {
@@ -113,8 +135,13 @@ nav a {
     display: none;
   }
   
+  .nav-wrap {
+    float: right;
+    width: 50px;
+  }
+  
   #logo img {
-    margin-left: 6%;
+    width: 110px;
   }
   
 	#menu-icon {
