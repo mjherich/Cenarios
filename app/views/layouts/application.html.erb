@@ -51,7 +51,6 @@
 
     <!-- yield section -->
     <div id="app-layout-yield">
-      <div class="container"></div>
       <div class="container">
         <% flash.each do |key, value| %>
         <%= content_tag :p, value, class: "alert alert-#{key}" %>
