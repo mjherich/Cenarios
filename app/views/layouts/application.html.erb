@@ -37,8 +37,11 @@
           </nav>
         </header>
       </div>
-      <div class="order-now-button">
-        <%= link_to "Order Now", locations_path %>
+      <div class="order-now">
+        <a href="<%= locations_path %>">
+          <div id="order-now-text">Order Now!</div>
+          <%= image_tag("wholePizza.svg") %>
+        </a>
       </div>
     </div>
 
