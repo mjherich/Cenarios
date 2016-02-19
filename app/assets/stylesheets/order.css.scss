@@ -1,0 +1,26 @@
+.order-type-button {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  margin: 10px auto;
+  background-color: #404040;
+  border: rgba(51,51,51,0.95) solid 1px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 0 rgba(51,51,51,0.95);
+  -moz-box-shadow: 0 5px 0 rgba(51,51,51,0.95);
+  box-shadow: 0 5px 0 rgba(51,51,51,0.95);
+}
+
+.order-type-button img {
+  width: 50%;
+}
+
+.order-type-button:hover {
+  top: 3px;
+  cursor:pointer;
+  -webkit-box-shadow: 0 2px 0 rgba(51,51,51,0.95);
+  -moz-box-shadow: 0 2px 0 rgba(51,51,51,0.95);
+  box-shadow: 0 2px 0 rgba(51,51,51,0.95);
+}

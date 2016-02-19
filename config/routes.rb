@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   
   get '/menu' => 'pages#menu'
   get '/locations' => 'pages#locations'
+  get '/order' => 'pages#order'
   
   # Menu routes
   get '/menu/pizza' => "menu#pizza"
