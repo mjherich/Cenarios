@@ -11,16 +11,42 @@
   -webkit-box-shadow: 0 5px 0 rgba(51,51,51,0.95);
   -moz-box-shadow: 0 5px 0 rgba(51,51,51,0.95);
   box-shadow: 0 5px 0 rgba(51,51,51,0.95);
+  cursor:pointer;
+  transition: all .1s linear;
 }
 
 .order-type-button img {
   width: 50%;
 }
 
-.order-type-button:hover {
-  top: 3px;
-  cursor:pointer;
+.order-type-button:active {
+  transform: translateY(3px);
   -webkit-box-shadow: 0 2px 0 rgba(51,51,51,0.95);
   -moz-box-shadow: 0 2px 0 rgba(51,51,51,0.95);
   box-shadow: 0 2px 0 rgba(51,51,51,0.95);
+}
+
+.order {
+  display: none;
+}
+
+.order h5,
+.order p {
+  padding: 0; margin: 0;
+}
+
+.order .order-type-button {
+  padding: 5px 0;
+  color: white;
+}
+
+.order a {
+  text-decoration: none;
+}
+
+.order div.divider {
+  width: 100%; height: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: white;
 }
