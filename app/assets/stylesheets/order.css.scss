@@ -13,10 +13,11 @@
   box-shadow: 0 5px 0 rgba(51,51,51,0.95);
   cursor:pointer;
   transition: all .1s linear;
-}
-
-.order-type-button img {
-  width: 50%;
+  text-shadow: 0px 1px 1px #4d4d4d;
+  
+  img {
+    width: 50%;
+  }
 }
 
 .order-type-button:active {
@@ -27,7 +28,18 @@
 }
 
 .order {
+  margin-top: 20px;
   display: none;
+}
+
+.phone {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.phone p {
+  line-height: 84px;
+  font-size: 1.9rem;
 }
 
 .order h5,
@@ -38,10 +50,36 @@
 .order .order-type-button {
   padding: 5px 0;
   color: white;
+  top: 10px;
+}
+@media only screen and (max-width : 1024px) {
+  .order {
+    .order-type-button {
+      top: 0;
+    }
+    .six {
+      text-align: center;
+    }
+    h5 {
+      font-weight: bold;
+    }
+    .phone p {
+      line-height: 100%;
+      margin-top: 3px;
+    }
+  }
 }
 
-.order a {
-  text-decoration: none;
+#view-menu {
+  // Customize view menu button based on order-type-button
+  height: 50px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 50px;
+  font-size: 3rem;
+  span {
+    color: white;
+  }
 }
 
 .order div.divider {

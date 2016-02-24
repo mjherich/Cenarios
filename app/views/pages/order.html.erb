@@ -1,16 +1,16 @@
 <div class="container">
   <div class="row page-title">
-    <h2>Order by...</h2>
+    <h2>Order VIA...</h2>
   </div>
   <div class="row order-type">
-    <div class="six columns phone">
-      <div class="order-type-button">
+    <div class="six columns">
+      <div class="order-type-button order-phone">
         <h4>Phone</h4>
         <%= image_tag("telephone.svg") %>
       </div>
     </div>
-    <div class="six columns online">
-      <div class="order-type-button">
+    <div class="six columns">
+      <div class="order-type-button order-online">
         <h4>Online</h4>
         <%= image_tag("notebook-and-mouse-cursor.svg") %>
       </div>
@@ -26,7 +26,7 @@
       <div class="six columns phone">
         <p>707-449-1900</p>
       </div>
-      <div class="six columns">
+      <div class="six columns online">
         <a href="https://cenarios-vacaville.foodtecsolutions.com:9443/">
           <div class="order-type-button">
             Order Online
@@ -44,7 +44,7 @@
       <div class="six columns phone">
         <p>707-425-1000</p>
       </div>
-      <div class="six columns">
+      <div class="six columns online">
         <a href="https://cenarios-fairfield.foodtecsolutions.com:9443/">
           <div class="order-type-button">
             Order Online
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="divider"></div>
-    <div class="row">
+    <div class="row" id="order-loc-height">
       <div class="six columns">
         <h5>Cenarios Pizza of Davis</h5>
         <p>1300 Covell Suite B</p>
@@ -62,7 +62,7 @@
       <div class="six columns phone">
         <p>530-759-1100</p>
       </div>
-      <div class="six columns">
+      <div class="six columns online">
         <a href="https://cenarios-davis.foodtecsolutions.com/menu">
           <div class="order-type-button">
             Order Online
@@ -80,7 +80,7 @@
       <div class="six columns phone">
         <p>707-693-1100</p>
       </div>
-      <div class="six columns">
+      <div class="six columns online">
         <a href="https://cenarios-dixon.foodtecsolutions.com/menu">
           <div class="order-type-button">
             Order Online
@@ -98,7 +98,7 @@
       <div class="six columns phone">
         <p>707-864-6400</p>
       </div>
-      <div class="six columns">
+      <div class="six columns online">
         <a href="https://cenarios-suisun.foodtecsolutions.com:9443/">
           <div class="order-type-button">
             Order Online
@@ -106,6 +106,10 @@
         </a>
       </div>
     </div>
-    
+  </div>
+  <div class="row">
+    <a href="<%= menu_path %>">
+      <div class="order-type-button" id="view-menu"><span>VIEW MENU</span></div>
+    </a>
   </div>
 </div>

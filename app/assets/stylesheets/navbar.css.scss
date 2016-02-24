@@ -14,7 +14,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  text-decoration: none;
 }
 
 #order-now-text {
@@ -22,13 +21,16 @@
   position: absolute;
   top: 17px;
   font-size: 2rem;
-  text-decoration: none;
   letter-spacing: 1px;
   text-shadow: 2px 2px 3px black;
   z-index: 1;
   color: white;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+nav img {
+  display: none;
 }
 
 .order-now img {
@@ -113,14 +115,9 @@ nav {
 }
 
 #menu-icon {
-	display: hidden;
+	display: none;
 	width: 40px;
 	height: 40px;
-}
-
-a:hover#menu-icon {
-	background-color: white;
-	border-radius: 4px 4px 0 0;
 }
 
 nav ul {
@@ -152,8 +149,12 @@ nav a {
   }
   
 	#menu-icon {
-		display:inline-block;
-    float:right;
+		display: inline-block;
+    float: right;
+    img {
+      display: block;
+      width: 100%;
+    }
 	}
   
   nav {
@@ -192,7 +193,6 @@ nav a {
   
   nav a {
     display: block;
-    text-decoration: none;
     color: black;
     width: 100%;
     height: 100%;
@@ -212,7 +212,7 @@ nav a {
 		display: block;
 	}
   #menu-icon:hover {
-    background-color: #444;
+    background-color: black;
     border-radius: 4px 4px 0 0;
   }
 }
@@ -228,18 +228,23 @@ nav a {
     line-height: 65px;
   }
 
-  nav li {
-    padding: 0;
-    text-align: center;
-    width: 24.999%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  nav {
+    li {
+      padding: 0;
+      text-align: center;
+      width: 24.999%;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    img {
+      display: inline-block;
+      width: 25px;
+    }
   }
 
   nav a {
     color: white;
     font-size: 2rem;
-    text-decoration: none;
     letter-spacing: 1px;
     display: block;
     margin: 0;
@@ -247,17 +252,6 @@ nav a {
     height: 100%;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-  }
-
-  #menu-icon {
-    display: none;
-    width: 40px;
-    height: 40px;
-  }
-
-  a:hover#menu-icon {
-    background-color: #444;
-    border-radius: 4px 4px 0 0;
   }
 
   nav li:hover {
@@ -274,7 +268,9 @@ nav a {
     color: #96979B;
     -webkit-transform:scale(1.1);
     transform:scale(1.1);
-    text-decoration: underline;
+    span {
+      text-decoration: underline;
+    }
   }
   
   /* Hide order now list item */

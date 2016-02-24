@@ -30,13 +30,37 @@
           </div>
           <div class="nav-wrap">
             <nav>
-              <a href="#" id="menu-icon" style="background: url(<%= image_url("menu-icon.png") %>) center;"></a>
+              <a href="#" id="menu-icon"><%= image_tag("menu-icon.svg") %></a>
               <ul>
-                <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "Menu", menu_pizza_path %></li>
-                <li><%= link_to "Locations", locations_path %></li>
-                <li><%= link_to "Contact", new_contact_path %></li>
-                <li><%= link_to "Order Now", order_path %></li>
+                <li>
+                  <a href="<%= root_path %>">
+                    <%= image_tag('web-page-home.svg') %>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="<%= menu_pizza_path %>">
+                    <%= image_tag('pizza-cutter.svg') %>
+                    <span>Menu</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="<%= locations_path %>">
+                    <%= image_tag('placeholder.svg') %>
+                    <span>Locations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="<%= new_contact_path %>">
+                    <%= image_tag('edit.svg') %>
+                    <span>Contact</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="<%= order_path %>">
+                    <span>Order Now</span>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>

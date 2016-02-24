@@ -42,3 +42,28 @@ setInterval(function() {
     bumpIt();
   }
 }, 250);
+
+
+// navbar icon responsiveness
+$(document).ready(function() {
+  $('nav li').hover(function() {
+    $('img', this).animate({width:'toggle'},270);
+  });
+});
+
+// Order page display animations
+$(document).ready(function() {
+  $('.order-phone').click(function() {
+    $('.online').hide();
+    $('.phone').show();
+    $('.order').slideDown(500);
+    $('html, body').animate({ scrollTop: $('.order').offset().top - 100 }, 1000);
+  });
+  
+  $('.order-online').click(function() {
+    $('.online').show();
+    $('.phone').hide();
+    $('.order').slideDown(500);
+    $('html, body').animate({ scrollTop: $('.order').offset().top - 100 }, 1000);
+  });
+});
