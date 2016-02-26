@@ -63,10 +63,22 @@
     h5 {
       font-weight: bold;
     }
-    .phone p {
+  }
+  .phone { 
+    p {
       line-height: 100%;
       margin-top: 3px;
+      letter-spacing: 3px;
     }
+    a > p {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  .order .phone .order-type-button {
+    display: none;
   }
 }
 
