@@ -42,13 +42,18 @@
   font-size: 1.9rem;
 }
 
+.online p {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 .order h5,
 .order p {
   padding: 0; margin: 0;
 }
 
 .order .order-type-button {
-  padding: 5px 0;
+  padding: 10px 0;
   color: white;
   top: 10px;
 }
@@ -64,11 +69,12 @@
       font-weight: bold;
     }
   }
-  .phone { 
+  .phone, .online { 
     p {
       line-height: 100%;
       margin-top: 3px;
-      letter-spacing: 3px;
+      font-size: 2rem;
+      font-weight: bold;
     }
     a > p {
       display: none;
