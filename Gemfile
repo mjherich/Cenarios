@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Owl Carousel for image slider
 gem 'owlcarousel-rails'
 
+# Paperclip gem for uploading images to db
+gem "paperclip", "~> 4.3"
+
 gem 'autoprefixer-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
