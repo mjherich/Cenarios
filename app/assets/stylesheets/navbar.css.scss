@@ -233,30 +233,34 @@ nav a {
       padding: 0;
       text-align: center;
       width: 24.999%;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
     img {
       display: inline-block;
       width: 25px;
     }
-  }
-
-  nav a {
-    color: white;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    a {
+      color: white;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      display: block;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
   }
 
   nav li:hover {
     background-color: black;
     cursor: pointer;
+    -webkit-box-shadow: 0 5px 15px;
+    -moz-box-shadow:    0 5px 15px;
+    box-shadow:         0 5px 15px;
+    -webkit-transform:scale(1.3);
+    transform:scale(1.2);
   }
 
   nav li:active {
