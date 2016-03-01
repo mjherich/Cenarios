@@ -1,17 +1,17 @@
-.locations p {
-  margin: 0;
-}
-
-.locations .row {
-  margin-bottom: 15px;
-}
-
-.locations .order-type-button {
-  margin: 0;
-  margin-top: 15px;
-  width: 100%;
+#locations { 
+  color: white;
   p {
     margin: 3px 0;
-    font-size: 2rem;
+  }
+  .row {
+    margin-bottom: 15px;
+  }
+  .order-type-button {
+    margin: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+  h6 {
+    font-weight: 700;
   }
 }
