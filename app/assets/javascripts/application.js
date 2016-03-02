@@ -67,3 +67,9 @@ $(document).ready(function() {
     $('html, body').animate({ scrollTop: $('.order').offset().top - 100 }, 1000);
   });
 });
+
+// Locations page divider width
+$(document).ready(function() {
+  var w = $('div#locations').width() + 40;
+  $('#locations div.divider').css( { width: w + 'px' } );
+});
