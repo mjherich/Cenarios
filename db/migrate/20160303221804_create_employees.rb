@@ -1,7 +1,7 @@
 class CreateEmployees < ActiveRecord::Migration
   def change
     create_table :employees do |t|
-      # Applicant Information
+      # Employee Information
       t.string :last_name
       t.string :first_name
       t.string :middle_initial
@@ -62,7 +62,7 @@ class CreateEmployees < ActiveRecord::Migration
       t.string :reference_address_2
       t.string :reference_phone_2
 
-      # Vehicle/insurance information
+      # Vehicle/Insurance information
       t.string :vehicle_year
       t.string :vehicle_make
       t.string :vehicle_model
