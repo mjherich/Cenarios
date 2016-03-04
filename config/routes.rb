@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
-  resources :contacts, only: [:new, :create]
-  resources :employees, only: [:new, :create]
+  # Contact Routes
+  #resources :contacts, only: [:new, :create]
+  get '/contact' => 'contacts#new'
+  post '/contacts' => 'contacts#create'
+  
+  # Employment Routes
+  #resources :employees, only: [:new, :create]
+  get '/employment' => 'employees#new'
+  post '/employees' => 'employees#create'
+  
+  # Root path
   root 'pages#home'
   
   get '/menu' => 'pages#menu'
