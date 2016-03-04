@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :contacts
+  resources :contacts, only: [:new, :create]
+  resources :employees, only: [:new, :create]
   root 'pages#home'
   
   get '/menu' => 'pages#menu'
