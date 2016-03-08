@@ -6,6 +6,9 @@ gem 'owlcarousel-rails'
 # Paperclip gem for uploading images to db
 gem "paperclip", "~> 4.3"
 
+# Simple form
+gem 'simple_form'
+
 gem 'autoprefixer-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
