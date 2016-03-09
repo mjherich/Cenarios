@@ -6,17 +6,27 @@
   img {
     width: 100%;
   }
-  .form-group-h {
+  .item {
+    padding-bottom: 5px;
+  }
+  li {
+    color: white;
+  }
+  .form-i {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .form-group {
     label {
-      display: block;
       margin: 0;
+      margin-bottom: 2px;
+      color: white;
+      font-size: 1.3rem;
     }
-    input {
+    input, select {
+      padding: 3px;
       display: inline;
       height: 100%;
     }
   }
-  
-  
-  
 }

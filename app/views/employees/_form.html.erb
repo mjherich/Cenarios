@@ -1,14 +1,143 @@
-<%= form_for @employee do |f| %>
+<%= simple_form_for @employee, defaults: { wrapper_html: { class: 'form-i' } } do |f| %>
 
-<div class="form-group-h">
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
-  
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
-  
-  <%= f.label :middle_initial %>
-  <%= f.text_field :middle_initial %>
+<div id="employment-owl" class="owl-carousel form-group">
+  <div class="item">
+    <h4>Applicant Information</h4>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :middle_initial %>
+    <%= f.input :address %>
+    <%= f.input :apartment_num %>
+    <br>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zip %>
+    <br>
+    <%= f.input :phone %>
+    <%= f.input :email %>
+    <br>
+    <%= f.input :start_date %>
+    <%= f.input :dob %>
+    <%= f.input :social_sec %>
+    <%= f.input :position %>
+    <%= f.input :citizen %>
+    <%= f.input :authorized %>
+    <%= f.input :worked_previously %>
+    <%= f.input :worked_previously_date %>
+    <%= f.input :felony %>
+    <%= f.input :felony_explanation %>
+  </div>
+  <!-- Previous Employment -->
+  <div class="item">
+    <h4>Previous Employment</h4>
+    <%= f.input :company_1 %>
+    <%= f.input :job_title_1 %>
+    <%= f.input :company_phone_1 %>
+    <%= f.input :supervisor_1 %>
+    <%= f.input :reference_1 %>
+    <%= f.input :from_1 %>
+    <%= f.input :to_1 %>
+    <%= f.input :start_salary_1 %>
+    <%= f.input :end_salary_1 %>
+    <%= f.input :quit_reason_1 %>
+
+    <%= f.input :company_2 %>
+    <%= f.input :job_title_2 %>
+    <%= f.input :company_phone_2 %>
+    <%= f.input :supervisor_2 %>
+    <%= f.input :reference_2 %>
+    <%= f.input :from_2 %>
+    <%= f.input :to_2 %>
+    <%= f.input :start_salary_2 %>
+    <%= f.input :end_salary_2 %>
+    <%= f.input :quit_reason_2 %>
+  </div>
+  <!-- References -->
+  <div class="item">
+    <h4>References</h4>
+    <%= f.input :reference_name_1 %>
+    <%= f.input :relationship_1 %>
+    <%= f.input :relationship_length_1 %>
+    <%= f.input :reference_address_1 %>
+    <%= f.input :reference_phone_1 %>
+    
+    <%= f.input :reference_name_2 %>
+    <%= f.input :relationship_2 %>
+    <%= f.input :relationship_length_2 %>
+    <%= f.input :reference_address_2 %>
+    <%= f.input :reference_phone_2 %>
+  </div>
+  <!-- Vehicle Information -->
+  <div class="item">
+    <h4>Vehicle Information</h4>
+    <%= f.input :vehicle_year %>
+    <%= f.input :vehicle_make %>
+    <%= f.input :vehicle_model %>
+    <%= f.input :vehicle_VIN %>
+    <%= f.input :license_plate_num %>
+    <%= f.input :drivers_license_num %>
+    <%= f.input :drivers_license_state %>
+    <%= f.input :drivers_license_expiration %>
+    <%= f.input :insurance_company %>
+    <%= f.input :insurance_effective_date %>
+    <%= f.input :insurance_expiration_date %>
+    <%= f.input :insurance_agent_name %>
+    <%= f.input :insurance_agent_phone %>
+    <%= f.input :insurance_agent_address %>
+    <%= f.input :liability_coverage_amount %>
+    <br>
+    <p>List traffic violations</p>
+    <%= f.input :violation_date_1 %>
+    <%= f.input :violation_1 %>
+    <%= f.input :violation_penalty_1 %>
+    
+    <%= f.input :violation_date_2 %>
+    <%= f.input :violation_2 %>
+    <%= f.input :violation_penalty_2 %>
+    
+    <%= f.input :violation_date_3 %>
+    <%= f.input :violation_3 %>
+    <%= f.input :violation_penalty_3 %>
+  </div>
+  <div class="item">
+    <h4>Employee Driver Agreement</h4>
+    <p>I have completed the above data regarding my driving record and represent the above is complete and accurate.  I authorize Cenario’s Pizza to obtain a motor vehicle record to verify the above information.  I understand that my record may be verified periodically at any time during your employment.  I also understand that if my record does not meet the company regulations at all times I may be terminated without any advance notice.</p>
+    <p>I understand that I must have liability insurance while I am a driver for Cenario’s Pizza and that Cenario’s Pizza is not responsible for any damage to my vehicle or any other vehicle(s), properties, or person(s) involved.</p>
+    <p>I understand the important of safety and agree to the following safety policies while working for Cenario’s Pizza.</p>
+    <ol>
+      <li>To obey all traffic laws at all times.</li>
+      <li>To keep my car in safe working order at all times and if it is not in good working order I understand that I can be terminated.</li>
+      <li>To wear my safety belt at all times.</li>
+      <li>Do not eat or drink while driving.</li>
+      <li>To place pizza delivery bag and drinks in prescribed areas only.</li>
+      <li>Never drive while on drugs or under the influence of alcohol.</li>
+      <li>No persons other than yourself are permitted to ride in your delivery vehicle while delivering for any reason.</li>
+      <li>To bring your vehicle to a complete stop at all stop signs and traffic lights at all times.</li>
+      <li>I understand that management might require me to take driver safety class and failure or refuse to do so will result in termination.</li>
+      <li>To notify Cenario’s Pizza of any tickets or accidents at any time either while working or off the clock</li>
+      <li>To notify Cenario’s Pizza if I have my driver license suspended or revoked.</li>
+      <li>To notify Cenario’s Pizza if there is any changes in my car insurance.</li>
+      <li>Notify manager immediately any incident to your car or another car while working which did or did not result in injury to persons or property regardless of who you believe to be at fault.</li>
+      <li>To always drive using courtesy and defensive driving strategies.</li>
+      <li>To only drive insured car listed above.</li>
+    </ol>
+    <p><strong><i>I have read and fully understand the Employee Driver Agreement.</i></strong></p>
+    <%= f.input :agree_1 %>
+  </div>
+  <div class="item">
+    <h4>Authorization and at-will employment agreement (Please read carefully)</h4>
+    <p>I certify that I have personally completed this application. I declare that the information provided in this employment application is true and complete and I understand that any false information or significant omissions may disqualify me from further consideration for employment and may be justification for my dismissal from employment if discovered at a later date.</p>
+    <p>I agree to immediately notify Cenario’s Pizza if I should be convicted of a crime while my job application is pending or during my employment, if hired. I authorize Cenario’s Pizza to make an investigation of all information contained in this employment application and I release from liability all companies and corporations supplying such information.</p>
+    <p>I understand any false answers, statements, or implications made by me on this application or other required documents shall be considered sufficient cause for denial of employment or discharge.</p>
+    <p>I specifically authorize and direct my current and former employers to supply employment-related information to Cenario’s Pizza and do hereby release my current and former employers from liability for providing information to Cenario’s Pizza.</p>
+    <p>Upon termination of my employment for whatever reason, I release Cenario’s Pizza from all liability for supplying any information concerning my employment to any potential employer.</p>
+    <p>I authorize Cenario’s Pizza if applicable, to request a copy of my credit report, motor vehicle driving record, and any other investigative report deemed necessary through various third party sources. As required by law, upon request within a reasonable period of time, I will be notified as to the nature and scope of such investigations.</p>
+    <p>I hereby agree to submit to any drug test required of me, whether prior to my employment or if employed by Cenario’s Pizza at any time thereafter. If requested, I will take a post-job offer physical examination and my employment, in the event I receive medical treatment for any condition, including a physical, psychological, emotional, or psychiatric condition that is job-related, I hereby authorize the limited release and exchange of such medical information relating to my condition between the treatment provider and a company-designated physician.</p>
+    <p>I understand and agree that nothing contained in this application, or conveyed during any interview is intended to create an employment contract between Cenario’s Pizza and me. In addition, I understand and agree that if Cenario’s Pizza employs me, in consideration of my employment, my employment and compensation will be at-will, for no definite period of time, and may be terminated at any time, for any reason, or for no reason at all. I understand that only Cenario’s Pizza President is authorized to change the employment-at-will status and such a change can only be done in writing.</p>
+    <p><strong><i>I have read, understand, and agree to all of the above.</i></strong></p>
+    <%= f.input :agree_2 %>
+    <%= f.button :submit %>
+  </div>
 </div>
 
 <% end %>

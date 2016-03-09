@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160305021800) do
+ActiveRecord::Schema.define(version: 20160309003255) do
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20160305021800) do
     t.string   "zip"
     t.string   "phone"
     t.string   "email"
-    t.string   "start_date"
+    t.date     "start_date"
     t.string   "dob"
     t.string   "social_sec"
     t.string   "position"
@@ -98,6 +98,8 @@ ActiveRecord::Schema.define(version: 20160305021800) do
     t.string   "violation_penalty_3"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.boolean  "agree_1"
+    t.boolean  "agree_2"
   end
 
 end

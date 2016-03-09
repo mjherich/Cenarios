@@ -21,10 +21,21 @@ $(document).ready(function() {
   $("#owl-image-slider").owlCarousel( {
     autoPlay: 10000, //Set AutoPlay to 5 seconds
     
+    mouseDrag: false,
     slideSpeed : 1500,
     paginationSpeed : 1500,
     pagination:false,
     singleItem:true 
+  });
+  // Employment owl
+  $("#employment-owl").owlCarousel( {
+    autoPlay: false,
+    singleItem: true,
+    navigation: true,
+    pagination: false,
+    mouseDrag: false,
+    touchDrag: false,
+    autoHeight: true
   });
   didResize = true;
 });
