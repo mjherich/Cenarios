@@ -16,3 +16,13 @@ Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/ima
 Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/images/specials/4TheOneOnOne.jpg'))))
 Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/images/specials/5TripleThreat.jpg'))))
 Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/images/specials/6DepressionBuster.jpg'))))
+
+# Menu Items seed
+Menu_item_list = [
+  ["pizza", "Super-rrrific", "Our homemade sauce, mozzarella cheese, pepperoni, mushrooms, onions, green peppers and Italian sausage.", asset_url('app/assets/images/placeholder_menu_image.png')],
+  ["pizza", "Veggie-rrrific", "Our homemade sauce, mozzarella cheese, mushrooms, onions, green peppers, black olives, tomatoes, fresh garlic and sprinkled with our special herb oil.", asset_url('app/assets/images/placeholder_menu_image.png')]
+  ]
+
+Menu_item_list.each do |category, name, description, image|
+  MenuItem.create(category: category, name: name, description: description, image: File.open( File.join(Rails.root, image)))
+end
