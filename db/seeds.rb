@@ -9,6 +9,7 @@
 # Specials image seed for paperclip
 include ActionView::Helpers::AssetTagHelper
 
+# Specials image seed for paperclip
 Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/images/specials/1SpecialtyMania.jpg'))))
 Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/images/specials/2TheBigDeal.jpg'))))
 Special.create(image: File.open( File.join(Rails.root, asset_url('app/assets/images/specials/3TheDoubleDose.jpg'))))
