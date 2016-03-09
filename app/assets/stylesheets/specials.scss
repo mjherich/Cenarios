@@ -1,3 +1,11 @@
 // Place all the styles related to the Specials controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.special-img {
+  width: 85%;
+  box-shadow: 7px 7px 5px #888888;
+}
+
+.special-row {
+  margin-bottom: 50px;
+}
