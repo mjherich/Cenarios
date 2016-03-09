@@ -9,6 +9,11 @@ class PagesController < ApplicationController
   end
   
   def menu
+    @pizzaItem = MenuItem.where(category: 'pizza')
+    @sandwichItem = MenuItem.where(category: 'sandwich')
+    @pastaItem = MenuItem.where(category: 'pasta')
+    @saladItem = MenuItem.where(category: 'salad')
+    @sideItem = MenuItem.where(category: 'side')
   end
   
   def locations

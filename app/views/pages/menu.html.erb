@@ -2,4 +2,37 @@
   <div class="row page-title">
     <h2>Menu</h2>
   </div>
+
+  <!-- Pizzas -->
+  <div class="row">
+    <div class="nine offset-by-three columns">
+      <%= @pizzaItem.each do |category, name, description, image| %>
+        <div class="menu-item-container">
+          <h5 class="menu-item-title"><%= name %></h5>
+          <%= image_tag image.url(:original), class: 'special-img' %>
+        </div>
+      <% end %>
+
+
+      <!-- Sandwiches -->
+      <%= @sandwichItem.each do |category, name, description, image| %>
+      
+      <% end %>
+
+      <!-- Pasta -->
+      <%= @pastaItem.each do |category, name, description, image| %>
+      
+      <% end %>
+
+      <!-- Salads -->
+      <%= @saladItem.each do |category, name, description, image| %>
+      
+      <% end %>
+
+      <!-- Sides -->
+      <%= @sideItem.each do |category, name, description, image| %>
+      
+      <% end %>
+    </div>
+  </div>
 </div>
